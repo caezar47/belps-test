@@ -5,7 +5,7 @@ window.onerror = function(error, url, lineNumber, column, errorObj) {
 	return;
 }
 
-[[azbntple tpl="/src/common/bootstrap/js/bootstrap.js" ]]
+[[azbntple tpl="8/src/common/bootstrap/js/bootstrap.js" ]]
 [[azbntple tpl="8/src/common/fancybox3/js/fancybox.js" ]]
 [[azbntple tpl="/src/_/concat.plugin.js" ]]
 
@@ -39,7 +39,7 @@ $(function() {
 	*/
 	[[azbntple tpl="/src/_/concat.document-ready.js" ]]
 	
-	
+	 
 	/*
 	Событие смены размера экрана, генерация этого события
 	*/
