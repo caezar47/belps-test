@@ -3,8 +3,8 @@
 		"form":"form__"
 	},
 	"path":{		                  
-		"css":"./build/css",
-		"img":"./build/img",
-		"js":"./build/js"
+		"css":"./css",
+		"img":"./img",
+		"js":"./js"
 	}
 }
