@@ -3,10 +3,8 @@
 		"form":"form__"
 	},
 	"path":{		                  
-		"css":"/build/css",
-		"img":"/build/img",
-		"js":"/build/js",
-		"favicon":"/build/favicon",
-		"docs":"/build/docs"
+		"css":"./build/css",
+		"img":"./build/img",
+		"js":"./build/js"
 	}
 }
