@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>	
+    	<meta charset="utf-8">	
+<title>Sign up</title>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link href="/css/style.css" rel="stylesheet">	</head>
+	<body>
+    	<div class="form__block">
+	<div class="form__bitmap"><h1 class="form__title">Sign up</h1></div>
+	<form action="#" id="form" class="form__panel  is--signup-form">
+		<div class="form__row  is--signup-wrap">
+
+			<h2 class="form__heading  is--signup-form">New user?</h2>
+			<p class="form__note  is--signup-form">Use the form below to create your account.</p>
+			<div class="form__row  is--signup-form">
+					
+<div class="form__item">
+	<label class="form__label" for="signup[first_name]">First Name</label>	<input type="text" class="form__control" id="signup[first_name]" name="first_name"    >
+</div>
+	
+<div class="form__item">
+	<label class="form__label" for="signup[last_name]">Last Name</label>	<input type="text" class="form__control" id="signup[last_name]" name="last_name"    >
+</div>
+
+
+				
+<div class="form__item">
+	<label class="form__label" for="signup[nation]">Nationality</label>	<select class="form__control  is--select" id="signup[nation]" name="nationality">
+					<option value="" selected disabled>Nationality</option>
+					<option value="" >American</option>
+					<option value="" >Byelorussian</option>
+					<option value="" >Russian</option>
+			
+	</select>
+</div>
+
+					
+<div class="form__item">
+	<label class="form__label" for="signup[email]">E-mail</label>	<input type="email" class="form__control" id="signup[email]" name="email" required  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="&nbsp;">
+</div>
+
+
+				<div class="form__item">
+					<label class="form__label" for="signup[day]">Date of Birth</label>
+					<div class="form__row  is--signup-birthday">
+						
+<div class="form__item">
+		<select class="form__control  is--select" id="signup[day]" name="day">
+					<option value="" selected disabled>Day</option>
+					<option value="" >1</option>
+					<option value="" >2</option>
+					<option value="" >3</option>
+					<option value="" >4</option>
+					<option value="" >5</option>
+					<option value="" >6</option>
+					<option value="" >7</option>
+					<option value="" >8</option>
+					<option value="" >9</option>
+					<option value="" >10</option>
+					<option value="" >11</option>
+					<option value="" >12</option>
+					<option value="" >13</option>
+					<option value="" >14</option>
+					<option value="" >15</option>
+					<option value="" >16</option>
+					<option value="" >17</option>
+					<option value="" >18</option>
+					<option value="" >19</option>
+					<option value="" >20</option>
+					<option value="" >21</option>
+					<option value="" >22</option>
+					<option value="" >23</option>
+					<option value="" >24</option>
+					<option value="" >25</option>
+					<option value="" >26</option>
+					<option value="" >27</option>
+					<option value="" >28</option>
+					<option value="" >29</option>
+					<option value="" >30</option>
+					<option value="" >31</option>
+			
+	</select>
+</div>
+
+						
+<div class="form__item">
+		<select class="form__control  is--select" id="signup[month]" name="month">
+					<option value="" selected disabled>Month</option>
+					<option value="" >January</option>
+					<option value="" >February</option>
+					<option value="" >March</option>
+					<option value="" >April</option>
+					<option value="" >May</option>
+					<option value="" >June</option>
+					<option value="" >July</option>
+					<option value="" >August</option>
+					<option value="" >September</option>
+					<option value="" >October</option>
+					<option value="" >November</option>
+					<option value="" >December</option>
+			
+	</select>
+</div>
+
+						
+<div class="form__item">
+		<select class="form__control  is--select" id="signup[year]" name="year">
+					<option value="" selected disabled>Year</option>
+					<option value="" >1990</option>
+					<option value="" >1991</option>
+					<option value="" >1992</option>
+					<option value="" >1993</option>
+					<option value="" >1994</option>
+					<option value="" >1995</option>
+					<option value="" >1996</option>
+					<option value="" >1997</option>
+					<option value="" >1998</option>
+					<option value="" >1999</option>
+					<option value="" >2000</option>
+			
+	</select>
+</div>
+
+					</div>
+				</div>
+				
+
+<div class="form__item">
+	<p class="form__label">Gender</p>	<div class="form__row  is--signup-radio">
+				<label class="form__radio">
+			<input class="form__radio-input" type="radio" id="signup[r1]" name="sex">
+			<span class="form__radio-icon"></span>
+			Male
+		</label>
+				<label class="form__radio">
+			<input class="form__radio-input" type="radio" id="signup[r2]" name="sex">
+			<span class="form__radio-icon"></span>
+			Female
+		</label>
+			</div>
+</div>
+					
+<div class="form__item">
+	<label class="form__label" for="signup[password]">Password</label>	<input type="password" class="form__control" id="signup[password]" name="password" required  pattern="[a-zA-Z0-9]{8,}" placeholder="&nbsp;">
+</div>
+	
+<div class="form__item">
+	<label class="form__label" for="signup[confirm_password]">Confirm Password</label>	<input type="password" class="form__control" id="signup[confirm_password]" name="confirm_password" required  pattern="[a-zA-Z0-9]{8,}" placeholder="&nbsp;">
+</div>
+
+
+			</div>
+			<div class="form__row  is--signup-submit">
+				<p class="form__login  is--signup-form">Have an account? <a href="#">Login</a></p>
+				<button type="submit" class="form__btn">Complete Signup</button>
+			</div>
+		</div>
+		<div class="form__bg  is--signup-form">
+			<svg id="user" width="411" height="411" viewBox="0 0 411 411" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path 
+					d="M250 143.5C250 168.077 230.077 188 205.5 188C180.923 188 161 168.077 161 143.5C161 118.923 180.923 99 205.5 99C230.077 99 250 118.923 250 143.5Z" 
+					stroke="#F9FAFF" 
+					stroke-width="27" 
+					data-duration="50"
+					/>
+				<path 
+					d="M396 205.5C396 310.71 310.71 396 205.5 396C100.29 396 15 310.71 15 205.5C15 100.29 100.29 15 205.5 15C310.71 15 396 100.29 396 205.5Z" 
+					stroke="#F9FAFF" 
+					stroke-width="29" 
+					data-duration="50"
+					/>
+				<path 
+					d="M88 357C88 286.86 140.383 230 205 230C269.617 230 322 286.86 322 357" 
+					stroke="#F9FAFF" 
+					stroke-width="29" 
+					data-duration="30" 
+				/>
+			</svg>
+		</div>
+	</form>	
+</div>     	<script src="/js/jquery-3.2.1.min.js" ></script>
+<script src="/js/document-ready.js" ></script>
+<script src="/js/svg4everybody.min.js" ></script>
+<script>
+svg4everybody();
+var user = new Vivus('user', {type: 'scenario-sync', start: 'autostart'});
+</script> 	</body>
+</html> 

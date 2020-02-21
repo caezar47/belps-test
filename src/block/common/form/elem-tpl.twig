@@ -1,0 +1,34 @@
+{% if view == "input" %}
+{% for value in list %}	
+<div class="{{prefix}}item">
+	{% if value.label %}<label class="{{prefix}}label" for="{{value.form_id}}[{{value.id}}]">{{value.label}}</label>{% endif %}
+	<input type="{{value.type}}" class="{{prefix}}control" id="{{value.form_id}}[{{value.id}}]" name="{{value.name}}" {{value.attr}}  {% if value.pattern %}pattern="{{value.pattern}}"{% endif %} {% if value.placeholder %}placeholder="{{value.placeholder}}"{% endif %}>
+</div>
+{% endfor %}
+{% endif %}
+
+{% if view == "select" %}
+<div class="{{prefix}}item">
+	{% if label %}<label class="{{prefix}}label" for="{{form_id}}[{{id}}]">{{label}}</label>{% endif %}
+	<select class="{{prefix}}control  is--select" id="{{form_id}}[{{id}}]" name="{{name}}">
+		{% for value in list %}
+			<option value="{{value.val}}" {{value.status}}>{{value.name}}</option>
+		{% endfor %}	
+	</select>
+</div>
+{% endif %}
+
+{% if view == "radio" %}
+<div class="{{prefix}}item">
+	{% if label %}<p class="{{prefix}}label">{{label}}</p>{% endif %}
+	<div class="{{prefix}}row  {{mod}}">
+		{% for value in list %}
+		<label class="{{prefix}}radio">
+			<input class="{{prefix}}radio-input" type="radio" id="{{value.form_id}}[{{value.id}}]" name="{{value.name}}">
+			<span class="{{prefix}}radio-icon"></span>
+			{{value.label}}
+		</label>
+		{% endfor %}
+	</div>
+</div>
+{% endif %}

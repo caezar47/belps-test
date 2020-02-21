@@ -1,0 +1,148 @@
+<div class="{{prefix.form}}block">
+	<div class="{{prefix.form}}bitmap"><h1 class="{{prefix.form}}title">{{title}}</h1></div>
+	<form action="#" id="form" class="{{prefix.form}}panel  {{mod}}-form">
+		<div class="{{prefix.form}}row  {{mod}}-wrap">
+
+			<h2 class="{{prefix.form}}heading  {{mod}}-form">{{heading}}</h2>
+			<p class="{{prefix.form}}note  {{mod}}-form">{{note}}</p>
+			<div class="{{prefix.form}}row  {{mod}}-form">
+				{% include "elem-tpl.twig" with {view: "input", prefix:prefix.form, list: [
+					{
+						"type":"text", 
+						"form_id":form_id,
+						"id":"first_name", 
+						"name":"first_name",
+						"label":"First Name"
+					},
+					{
+						"type":"text", 
+						"form_id":form_id,
+						"id":"last_name", 
+						"name":"last_name",
+						"label":"Last Name"
+					}
+				]} %}
+				{% include "elem-tpl.twig" with {view:"select", prefix:prefix.form,id:"nation", form_id:form_id, label:"Nationality", name:"nationality", list: [
+					{"name": "Nationality","status": "selected disabled"},
+					{"name": "American"},
+					{"name": "Byelorussian"},
+					{"name": "Russian"}
+				] } %}
+				{% include "elem-tpl.twig" with {view: "input", prefix:prefix.form, list: [
+					{
+						"type":"email", 
+						"form_id":form_id,
+						"id":"email", 
+						"name":"email",
+						"attr":"required",
+						"label":"E-mail",
+						"placeholder":"&nbsp;",
+						"pattern":"([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+					}
+				]} %}
+				<div class="{{prefix.form}}item">
+					<label class="{{prefix.form}}label" for="{{form_id}}[day]">Date of Birth</label>
+					<div class="{{prefix.form}}row  is--signup-birthday">
+						{% include "elem-tpl.twig" with {view:"select", prefix:prefix.form,id:"day", form_id:form_id, name:"day", list: [
+							{"name": "Day","status": "selected disabled"},
+							{"name": "1"},
+							{"name": "2"},
+							{"name": "3"},
+							{"name": "4"},
+							{"name": "5"},
+							{"name": "6"},
+							{"name": "7"},
+							{"name": "8"},
+							{"name": "9"},
+							{"name": "10"},{"name": "11"},{"name": "12"},{"name": "13"},{"name": "14"},{"name": "15"},{"name": "16"},{"name": "17"},{"name": "18"},{"name": "19"},
+							{"name": "20"},{"name": "21"},{"name": "22"},{"name": "23"},{"name": "24"},{"name": "25"},{"name": "26"},{"name": "27"},{"name": "28"},{"name": "29"},
+							{"name": "30"},{"name": "31"}
+						] } %}
+						{% include "elem-tpl.twig" with {view:"select", prefix:prefix.form,id:"month", form_id:form_id, name:"month", list: [
+							{"name": "Month","status": "selected disabled"},
+							{"name": "January"},
+							{"name": "February"},
+							{"name": "March"},
+							{"name": "April"},
+							{"name": "May"},
+							{"name": "June"},
+							{"name": "July"},
+							{"name": "August"},
+							{"name": "September"},
+							{"name": "October"},
+							{"name": "November"},
+							{"name": "December"}
+						] } %}
+						{% include "elem-tpl.twig" with {view:"select", prefix:prefix.form,id:"year", form_id:form_id, name:"year", list: [
+							{"name": "Year","status": "selected disabled"},
+							{"name": "1990"},
+							{"name": "1991"},
+							{"name": "1992"},
+							{"name": "1993"},
+							{"name": "1994"},
+							{"name": "1995"},
+							{"name": "1996"},
+							{"name": "1997"},
+							{"name": "1998"},
+							{"name": "1999"},
+							{"name": "2000"},
+						] } %}
+					</div>
+				</div>
+				{% include "elem-tpl.twig" with {view:"radio", prefix:prefix.form, mod:"is--signup-radio", label:"Gender",  list: [
+					{"id":"r1", "form_id":form_id, "name":"sex", "label":"Male"},
+					{"id":"r2", "form_id":form_id, "name":"sex", "label":"Female"}
+					] 
+				} %}
+				{% include "elem-tpl.twig" with {view: "input", prefix:prefix.form, list: [
+					{
+						"type":"password", 
+						"form_id":form_id,
+						"id":"password", 
+						"name":"password",
+						"attr":"required",
+						"label":"Password",
+						"placeholder":"&nbsp;",
+						"pattern":"[a-zA-Z0-9]{8,}"
+					},
+					{
+						"type":"password", 
+						"form_id":form_id,
+						"id":"confirm_password", 
+						"name":"confirm_password",
+						"attr":"required",
+						"label":"Confirm Password",
+						"placeholder":"&nbsp;",
+						"pattern":"[a-zA-Z0-9]{8,}"
+					}
+				]} %}
+			</div>
+			<div class="{{prefix.form}}row  {{mod}}-submit">
+				<p class="{{prefix.form}}login  {{mod}}-form">Have an account? <a href="#">Login</a></p>
+				<button type="submit" class="{{prefix.form}}btn">Complete Signup</button>
+			</div>
+		</div>
+		<div class="{{prefix.form}}bg  {{mod}}-form">
+			<svg id="user" width="411" height="411" viewBox="0 0 411 411" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path 
+					d="M250 143.5C250 168.077 230.077 188 205.5 188C180.923 188 161 168.077 161 143.5C161 118.923 180.923 99 205.5 99C230.077 99 250 118.923 250 143.5Z" 
+					stroke="#F9FAFF" 
+					stroke-width="27" 
+					data-duration="50"
+					/>
+				<path 
+					d="M396 205.5C396 310.71 310.71 396 205.5 396C100.29 396 15 310.71 15 205.5C15 100.29 100.29 15 205.5 15C310.71 15 396 100.29 396 205.5Z" 
+					stroke="#F9FAFF" 
+					stroke-width="29" 
+					data-duration="50"
+					/>
+				<path 
+					d="M88 357C88 286.86 140.383 230 205 230C269.617 230 322 286.86 322 357" 
+					stroke="#F9FAFF" 
+					stroke-width="29" 
+					data-duration="30" 
+				/>
+			</svg>
+		</div>
+	</form>	
+</div> 

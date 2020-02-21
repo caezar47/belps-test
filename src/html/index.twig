@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>	
+    	{% include "../block/common/head/head.twig" with {title:"Sign up"}  %}
+	</head>
+	<body>
+    	{% include "../block/common/form/signup.twig" with {
+            mod:"is--signup",
+            title:"Sign up",
+            heading:"New user?",
+            note:"Use the form below to create your account.",
+            form_id:"signup"
+        } %}
+    	{% include "../block/common/script/script.twig"%}
+	</body>
+</html> 

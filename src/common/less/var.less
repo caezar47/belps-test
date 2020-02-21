@@ -1,0 +1,161 @@
+//===== url =====//
+@url-site 					: 	'';
+@url-path 					: 	'/wp-content/themes/azbn7theme'; 
+//@url-path 				: 	'/tpl/';
+@url-path 					: 	'';
+@url-path-css 				: 	'@{url-path}/css';
+@url-path-fonts 			: 	'@{url-path}/fonts';
+@url-path-img 				: 	'@{url-path}/img';
+@url-path-js 				: 	'@{url-path}/js';
+
+//===== color =====//
+//= social
+@color-vk 					: 	#4d7198;
+@color-yb 					: 	#bb0000;
+@color-skype 				: 	#4d7198;
+@color-viber 				: 	#7F40BD;
+@color-whatsapp 			: 	#7AD06D;
+@color-ok 					: 	#ee8208;
+@color-fb 					: 	#3b5998;
+@color-tw 					: 	#1faee9;
+@color-be 					: 	#4176fa;
+@color-pint 				:	#cd1f28;
+@color-inst 				: 	#f26798;
+@color-drb 					: 	#f26798;
+@color-pdf 					:	#bb0706;
+@color-doc 					:	#2186fa;
+@color-xls 					:	#23a565;
+@color-ppt 					:	#cd4b33;
+@color-jpg 					:	#208895;
+@color-zip 					:	#f2e295;
+@color-txt 					:	#6fbbcc;
+
+//= default
+@blue 						: 	#5A61ED;
+@red 						: 	#FF2222;
+
+@white 						:	#fff;
+@black 						: 	#000;
+@black-33 					: 	#333;
+@black-b5 					: 	#B5B5BD;
+@orange 					:	#F24F00;
+@yellow 					:	#FF8E26;
+
+@primary 					:	@blue;
+@default 					:	@black;
+@warning 					:	@black-33;
+@success 					:	@yellow;
+@info 						:	@black-b5;
+@danger 					:	@red;
+
+
+//===== fonts =====//
+@worksans 					:	'Work Sans', sans-serif;
+@ptsans 					:	'PT Sans', sans-serif;
+@roboto 					:	roboto-400;
+@roboto-700 				:	roboto-700;
+
+@magistral 					:	magistral-700;
+
+//===== media queries points =====//
+@xs 						:	0px;
+@sm 						:	575px;
+@md 						:	768px;
+@lg 						:	992px;
+@xl 						:	1200px;
+@xxl 						:	1700px;
+
+//===== base =====//
+@b-color 					:	@default; 
+@b-color-a 					:	@primary; 
+@b-color-a-hover 			:	@danger; 
+@b-color-h 					:	@warning; 
+@b-block-bg 				:	@info;
+
+@body_bg 					:	@white; 
+@b-ff 						:	@worksans;
+@b-ff-2 					:	@ptsans;
+@b-italic 					:	@b-ff;
+@b-bold 					:	@b-ff; 		
+@b-fs 						: 	14px;
+@b-lh 						: 	20px;
+@trs-site 					: 	all 0.35s ease; 
+@trs-option 				: 	0.35s ease; 
+@b_rad 						: 	5px; 
+
+@b-container  				:	1570px;
+@b-container-default  		:	1045px;
+
+//===== form  =====//
+@form_bg					: 	#F4F5FC;
+//=== input ===
+@input_label				: 	#7C7C7C;
+@input_bg					:	fadeout(@white, 100%);
+@input_height				:	26px;
+@input_height_textarea		:	145px;
+@input_border_width			:	1px;
+@input_border_color			:	#F2F2F2;
+
+//= focus =
+@input_focus_bg				:	@white;
+@input_focus_border_color	:	@primary;
+
+//== input text ==
+@input_t_color				:	@warning;
+@input_t_fs					:	@b-fs;
+@input_t_lh					:	@b-lh;
+//= focus =
+@input_focus_t_color		:	@warning;
+
+//== placeholder ==
+@input_plh_color			:	@success;
+@input_plh_fs				:	@b-fs;
+@input_plh_lh				:	@b-lh;
+//= focus =
+@input_focus_plh_color		:	@b-color;
+
+//== white ==
+@input_w_bg					:	fadeout(@white, 100%);
+@input_w_color				:	@white;
+@input_w_border_color		:	@white;
+//= focus =
+@input_w_focus_bg			:	@white;
+@input_w_focus_border_color	:	@primary;
+@input_w_focus_color		:	@b-color;
+
+//== placeholder ==
+@input_w_plh_color			:	@white;
+//= focus =
+@input_w_focus_plh_color	:	@b-color;
+
+//=== radio ===
+@radio_gutter 				: 	4px;
+@radio_bg 					: 	@primary;
+@radio_bg_hover 			: 	@success;
+
+//=== submit ===
+@submit_bg					: 	@primary;
+@submit_color				: 	@white;
+
+@submit_hover_bg			: 	@danger;
+
+//=== radio ===
+@radio_color 				: 	@default;
+@radio_size 				: 	12px;
+@radio_gutter 				: 	4px;
+@radio_bg 					: 	@white;
+@radio_border_width 		: 	1px;
+@radio_border_color 		: 	@primary;
+@radio_icon 				: 	transparent;
+@radio_radius 				: 	50%;
+
+//= disabled =
+@radio_disabled_icon		:	@white;
+@radio_disabled_bg			: 	fadeout(@default, 30%);
+
+//= focus =
+@radio_focus_color 			: 	@primary;
+@radio_focus_bg 			: 	@primary;
+@radio_focus_shadow	 		:	@primary;
+@radio_focus_border_color	: 	@primary;
+@radio_focus_icon 			: 	@white;

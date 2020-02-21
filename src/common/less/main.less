@@ -1,0 +1,22 @@
+html {}
+*::selection{background: darken(@white, 20%);}
+body {
+	color: @b-color;
+	background-color: @body_bg;
+	max-width: 800px;
+	margin: 0 auto;
+}
+a{
+	color: @b-color-a;
+	transition: @trs-site;
+	&:focus, &:hover{
+		text-decoration: none;
+	}
+	&:hover{
+		color: @b-color-a-hover;
+	}
+}
+p{
+	margin: 0;
+} 
+*:focus{outline: 0!important;}
